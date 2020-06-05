@@ -1,0 +1,240 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>maskcode module &mdash; EasyRe  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> EasyRe
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">maskcode module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EasyRe</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>maskcode module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/maskcode.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-maskcode">
+<span id="maskcode-module"></span><h1>maskcode module<a class="headerlink" href="#module-maskcode" title="Permalink to this headline">¶</a></h1>
+<p>Mask Code Like PyQt5.QWidget.QLineEdit
+It is <strong>simpler</strong> and <strong>easier to understand</strong> than <strong>regular expressions</strong>.
+<a class="reference external" href="https://www.cnblogs.com/HE-helloword/articles/12349285.html">https://www.cnblogs.com/HE-helloword/articles/12349285.html</a></p>
+<dl class="function">
+<dt id="maskcode.is_match">
+<code class="sig-prename descclassname">maskcode.</code><code class="sig-name descname">is_match</code><span class="sig-paren">(</span><em class="sig-param">mask: str</em>, <em class="sig-param">string: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#maskcode.is_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is The Mask Match String
+:param mask:
+:type mask: Maskcode
+:param string:
+:type string: Will match string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>Boolean</strong></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>True/False</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>&gt;&gt;&gt;is_match(“9”, “0”)
+True
+&gt;&gt;&gt;is_match(“A”, “0”)
+False</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="maskcode.mask_char2char_set">
+<code class="sig-prename descclassname">maskcode.</code><code class="sig-name descname">mask_char2char_set</code><span class="sig-paren">(</span><em class="sig-param">mask_char: str</em><span class="sig-paren">)</span><a class="headerlink" href="#maskcode.mask_char2char_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mask Char like ‘a’ to char set like [1]
+:param mask_char:
+:type mask_char: mask str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>char set(list type)</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>ValueError</strong><strong>(</strong><strong>Mask Char Can't to be empty</strong><strong>)</strong><strong>:Can't be Mask  Char To Empty String</strong><strong>(</strong><strong>''</strong><strong>)</strong> – </p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Don’t Support like ‘a’ or ‘!’
+Only Support ‘A’ ‘N’ ‘9’ ‘D’ ‘F’ ‘B’</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Xie Zheyuan
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
