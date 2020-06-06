@@ -1,6 +1,9 @@
 """
 Mask Code Like PyQt5.QWidget.QLineEdit
 It is **simpler** and **easier to understand** than **regular expressions**.
+
+References
+-----------
 https://www.cnblogs.com/HE-helloword/articles/12349285.html
 """
 all_alphas = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
@@ -26,8 +29,8 @@ def mask_char2char_set(mask_char: str):
     ------
     ValueError(Mask Char Can't to be empty):Can't be Mask  Char To Empty String('')
 
-    Notes
-    -----
+    Warnings
+    --------
     Don't Support like 'a' or '!'
     Only Support 'A' 'N' '9' 'D' 'F' 'B'
 
@@ -67,6 +70,7 @@ def mask_char2char_set(mask_char: str):
 def is_match(mask: str, string: str) -> bool:
     """
     Is The Mask Match String
+    
     Parameters
     ----------
     mask:Maskcode
@@ -79,9 +83,13 @@ def is_match(mask: str, string: str) -> bool:
     Examples
     --------
     >>>is_match("9", "0")
-    True
     >>>is_match("A", "0")
-    False
+
+    
+    Warnings
+    --------
+    Don't Support like 'a' or '!'
+    Only Support 'A' 'N' '9' 'D' 'F' 'B'
     """
     if len(mask) != len(string):
         return False

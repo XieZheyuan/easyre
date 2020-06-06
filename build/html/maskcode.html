@@ -148,29 +148,35 @@
   <div class="section" id="module-maskcode">
 <span id="maskcode-module"></span><h1>maskcode module<a class="headerlink" href="#module-maskcode" title="Permalink to this headline">¶</a></h1>
 <p>Mask Code Like PyQt5.QWidget.QLineEdit
-It is <strong>simpler</strong> and <strong>easier to understand</strong> than <strong>regular expressions</strong>.
-<a class="reference external" href="https://www.cnblogs.com/HE-helloword/articles/12349285.html">https://www.cnblogs.com/HE-helloword/articles/12349285.html</a></p>
+It is <strong>simpler</strong> and <strong>easier to understand</strong> than <strong>regular expressions</strong>.</p>
+<p class="rubric">References</p>
+<p><a class="reference external" href="https://www.cnblogs.com/HE-helloword/articles/12349285.html">https://www.cnblogs.com/HE-helloword/articles/12349285.html</a></p>
 <dl class="function">
 <dt id="maskcode.is_match">
 <code class="sig-prename descclassname">maskcode.</code><code class="sig-name descname">is_match</code><span class="sig-paren">(</span><em class="sig-param">mask: str</em>, <em class="sig-param">string: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#maskcode.is_match" title="Permalink to this definition">¶</a></dt>
-<dd><p>Is The Mask Match String
-:param mask:
-:type mask: Maskcode
-:param string:
-:type string: Will match string</p>
+<dd><p>Is The Mask Match String</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>Boolean</strong></p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mask</strong> (<em>Maskcode</em>) – </p></li>
+<li><p><strong>string</strong> (<em>Will match string</em>) – </p></li>
+</ul>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>True/False</p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>Boolean</strong></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>True/False</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
 <p>&gt;&gt;&gt;is_match(“9”, “0”)
-True
-&gt;&gt;&gt;is_match(“A”, “0”)
-False</p>
+&gt;&gt;&gt;is_match(“A”, “0”)</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don’t Support like ‘a’ or ‘!’
+Only Support ‘A’ ‘N’ ‘9’ ‘D’ ‘F’ ‘B’</p>
+</div>
 </dd></dl>
 
 <dl class="function">
@@ -190,9 +196,11 @@ False</p>
 <dd class="field-odd"><p><strong>ValueError</strong><strong>(</strong><strong>Mask Char Can't to be empty</strong><strong>)</strong><strong>:Can't be Mask  Char To Empty String</strong><strong>(</strong><strong>''</strong><strong>)</strong> – </p>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>Don’t Support like ‘a’ or ‘!’
 Only Support ‘A’ ‘N’ ‘9’ ‘D’ ‘F’ ‘B’</p>
+</div>
 </dd></dl>
 
 </div>
